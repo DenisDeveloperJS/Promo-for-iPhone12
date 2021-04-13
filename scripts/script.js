@@ -185,9 +185,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let allGuds = response.slice();
         
         // Начинаеться говнокод
+        // Вывод случайных товаров по клику на кнопку показать ещё
+        // Закомментировано потому что, я не придумал как по другому вывести случайные товары (без повторений) 
         let {length} = response;
         let random = Math.round(Math.random() * length);
 
+        
         // const randomItem = (arr, remaingGuds) => {
         //     if(random <= length && !arr.length && random > 3) {
         //         random = random - lengthcrossSellList;
