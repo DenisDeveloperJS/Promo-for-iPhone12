@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let allGuds = response.slice();
         
         // Начинаеться говнокод
-        // Вывод случайных товаров по клику на кнопку показать ещё
+        // Выsвод случайных товаров по клику на кнопку показать ещё
         // Закомментировано потому что, я не придумал как по другому вывести случайные товары (без повторений) 
         let {length} = response;
         let random = Math.round(Math.random() * length);
@@ -217,8 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //     randomItem(count, allGuds);
         //     addFourItems(count);
         // }
-        const a1 = 'hello';
-        const a2 = 1;
+
 
         const addFourItems = count => {
 
