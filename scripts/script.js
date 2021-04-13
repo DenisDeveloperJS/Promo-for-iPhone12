@@ -218,6 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //     addFourItems(count);
         // }
         const a1 = 'hello';
+        const a2 = 1;
 
         const addFourItems = count => {
 
