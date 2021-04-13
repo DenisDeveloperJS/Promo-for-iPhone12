@@ -1,6 +1,6 @@
 'use strict';
 import createNegativeArrayIndex from './app.js'
-
+console.log(213);
 document.addEventListener('DOMContentLoaded', () => {
     const cardDetailsTitle = document.querySelectorAll('.card-details__title_all h2');
     const cardDetailButtons = document.querySelector('.card-detail__buttons');
@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalDelivery();
         closeModal();
     }
+    
 
     getData("/cross-sell-dbase/dbase.json", response => {
         const crossSellList = document.querySelector('.cross-sell__list');
