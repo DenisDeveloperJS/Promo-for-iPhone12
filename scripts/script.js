@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //     randomItem(count, allGuds);
         //     addFourItems(count);
         // }
-
+        const a1 = 'hello';
 
         const addFourItems = count => {
 
