@@ -1,5 +1,4 @@
 'use strict';
-import createNegativeArrayIndex from './app.js'
 console.log(213);
 document.addEventListener('DOMContentLoaded', () => {
     const cardDetailsTitle = document.querySelectorAll('.card-details__title_all h2');
