@@ -453,4 +453,7 @@ h1, h2, h3, p, ul {
     margin-top: 20px;
 }
 
+.not-filled {
+    background-color: #FE3B3B;
+}
 

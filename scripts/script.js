@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const characteristicsList = document.querySelector('.characteristics__list');
     const characteristicsDescription = document.querySelectorAll('.characteristics__description');
     const modalTitle = document.querySelector('.modal__title');
+    const modalInput = document.querySelectorAll('.modal__input');
 
     const data = [
         {
@@ -151,6 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        const submitModal = () => {
+            modalBuy.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                       
+            });
+        }
+
+
+
+        
+
         const escapeHudler = () => {
             if(event.key === 'Escape' || event.keyCode === '27' || event.which === '27') {
                 modal.classList.remove('open');
@@ -171,35 +184,36 @@ document.addEventListener('DOMContentLoaded', () => {
         let count = [];
         let allGuds = response.slice();
         
+        // Начинаеться говнокод
         let {length} = response;
         let random = Math.round(Math.random() * length);
 
-        const randomItem = (arr, remaingGuds) => {
-            if(random <= length && !arr.length && random > 3) {
-                random = random - lengthcrossSellList;
-            }
-            if(!arr.length || arr.length !== 4) {
-                if(typeof arr[0] === 'undefined') {
-                    arr[0] = random;
-                    allGuds.splice(random, 1);
-                }
+        // const randomItem = (arr, remaingGuds) => {
+        //     if(random <= length && !arr.length && random > 3) {
+        //         random = random - lengthcrossSellList;
+        //     }
+        //     if(!arr.length || arr.length !== 4) {
+        //         if(typeof arr[0] === 'undefined') {
+        //             arr[0] = random;
+        //             allGuds.splice(random, 1);
+        //         }
 
-                arr.push(++random);
-                allGuds.splice(random, 1);
+        //         arr.push(++random);
+        //         allGuds.splice(random, 1);
                 
-                randomItem(count, allGuds);
-            } else {
-                return true;
-            }
+        //         randomItem(count, allGuds);
+        //     } else {
+        //         return true;
+        //     }
 
-        }
-        randomItem(count, allGuds);
+        // }
+        // randomItem(count, allGuds);
 
-        const randomItemAddItem = () => {
-            count = [];
-            randomItem(count, allGuds);
-            addFourItems(count);
-        }
+        // const randomItemAddItem = () => {
+        //     count = [];
+        //     randomItem(count, allGuds);
+        //     addFourItems(count);
+        // }
 
 
         const addFourItems = count => {
@@ -221,9 +235,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         addFourItems(count);
 
-        sellsAddRecomandate.addEventListener('click', () => {
-            randomItemAddItem();
-        });
+        // sellsAddRecomandate.addEventListener('click', () => {
+        //     randomItemAddItem();
+        // });
 
     });
 
@@ -231,6 +245,5 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs();
     activeCharacteristics();
     modal();
-    amenu('.header__menu', '.header-menu__list', '.header-menu__item', '.header-menu__burger');
 });
 
