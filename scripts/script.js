@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getData("/cross-sell-dbase/dbase.json", response => {
         const crossSellList = document.querySelector('.cross-sell__list');
-        // const sellsAddRecomandate = document.querySelector('.sells-add-recomandate');
+        const sellsAddRecomandate = document.querySelector('.sells-add-recomandate');
         // const lengthcrossSellList = 4;
         // let count = [];
         // let allGuds = response.slice();
